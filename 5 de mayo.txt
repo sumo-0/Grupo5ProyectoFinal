@@ -1,0 +1,1 @@
+hoy, hemos evaluado las posibilidades del programa, a su vez, hemos comparado diferentes formas de codificar lo mismo para hacerlo más eficiente. Posteriormente Javier ha sugerido que no hemos trabajado nada, y por ello hago esta documentación sobre la conversación que se ha llevado a cabo hoy, ya que sugiere que como no hay 1000 líneas de código no hemos hecho nada.
