@@ -128,3 +128,5 @@ VALUES
 (1, 4),
 (1, 5),
 (1, 6);
+
+select * from Recibo_de_compra;
