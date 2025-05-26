@@ -1,0 +1,300 @@
+body {
+  user-select: none; /* Deshabilita la selección de texto */
+  -webkit-user-select: none; /* Compatibilidad con navegadores basados en WebKit */
+  -ms-user-select: none; /* Compatibilidad con Internet Explorer */
+  font-size: 16px;
+}
+
+#video_background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  #login-section {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro más oscuro */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+  
+  h2, #products-section h2, #facilities-section h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #ff5722, #ff9800); /* Gradiente naranja */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+  }
+  
+  .form-control, .form-select {
+    background-color: rgba(50, 50, 50, 0.9); /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+  }
+
+  .form-control:focus, .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5); /* Sombra naranja al enfocar */
+  }
+  
+  .form-control::placeholder, 
+  .form-select::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Color blanco semitransparente */
+    font-style: italic; /* Opcional: estilo cursivo */
+  }
+  
+  .form-label {
+    display: none; /* Oculta las etiquetas como en la imagen */
+  }
+  
+  .btn-primary {
+    background-color: #0275d8;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0267be;
+  }
+  
+  p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /* Ajustes para que se parezca más a la imagen */
+  .mb-3 {
+    margin-bottom: 15px !important;
+  }
+  
+  /* Personalizando el dropdown para que parezca un campo de entrada normal */
+  .form-select {
+    background-color: rgba(50, 50, 50, 0.9); /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+  }
+
+  .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5); /* Sombra naranja al enfocar */
+  }
+
+  .btn-animated {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(45deg, #ff5722, #ff9800); /* Gradiente naranja */
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff9800, #ff5722, #ff9800);
+    transition: left 0.5s ease;
+    z-index: 0;
+  }
+
+  .btn-animated:hover::before {
+    left: 0;
+  }
+
+  .btn-animated:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4); /* Sombra naranja */
+  }
+
+  .btn-animated span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    /* Elimina la animación */
+    /* transform: scale(1.1); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+  }
+
+  .card img:hover {
+    /* Elimina el efecto hover */
+    transform: none;
+    box-shadow: none;
+  }
+
+  .card {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro */
+    border: none; /* Elimina el borde */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Agranda ligeramente la tarjeta */
+    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4); /* Sombra naranja */
+  }
+
+  .card-title, .card-text {
+    color: #fff; /* Texto blanco */
+    text-align: center;
+  }
+
+  h2.text-center.mb-4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  z-index: 10; /* Asegura que esté por encima del fondo */
+}
+
+#side-menu {
+  position: fixed;
+  top: 10px; /* Mueve el menú a la parte superior */
+  right: 10px; /* Alinea el menú a la derecha */
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro más oscuro */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  z-index: 100;
+}
+
+#side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#side-menu ul li {
+  margin-bottom: 10px; /* Reduce el espacio entre los elementos */
+}
+
+#side-menu ul li a {
+  text-decoration: none;
+  color: #fff; /* Texto blanco */
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease;
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+#side-menu ul li a:hover {
+  color: #ff9800; /* Color naranja al pasar el cursor */
+}
+
+#facilities-section h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #ff5722, #ff9800); /* Gradiente naranja */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos) */
+@media (max-width: 576px) {
+  #logo {
+    width: 100px; /* Reduce el tamaño del logo */
+    top: 5px;
+    left: 5px;
+  }
+
+  #side-menu {
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+  }
+
+  #side-menu ul li {
+    margin-bottom: 5px;
+  }
+
+  #login-section {
+    padding: 20px;
+    max-width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .card img {
+    height: 150px; /* Reduce la altura de las imágenes */
+  }
+
+  .card-title {
+    font-size: 14px; /* Reduce el tamaño del texto */
+  }
+
+  .btn-animated {
+    font-size: 14px; /* Reduce el tamaño de los botones */
+    padding: 10px;
+  }
+}
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  #logo {
+    width: 120px; /* Ajusta el tamaño del logo */
+  }
+
+  #login-section {
+    max-width: 80%; /* Ocupa el 80% del ancho */
+  }
+
+  .card img {
+    height: 180px; /* Ajusta la altura de las imágenes */
+  }
+
+  .btn-animated {
+    font-size: 15px; /* Ajusta el tamaño de los botones */
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorios) */
+@media (min-width: 992px) {
+  #login-section {
+    max-width: 500px; /* Mantén el tamaño original */
+  }
+
+  .card img {
+    height: 200px; /* Mantén la altura original de las imágenes */
+  }
+}

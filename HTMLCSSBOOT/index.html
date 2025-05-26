@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESAFÍO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <img src="logo.png" alt="La Salle Santo Ángel" id="logo">
+  <video autoplay loop muted id="video_background">
+    <source src="videoplayback.mp4" type="video/mp4">
+  </video>
+
+  <div id="side-menu">
+    <ul>
+      <li><a href="#login-section">Inicio de Sesión</a></li>
+      <li><a href="#products-section">Productos</a></li>
+      <li><a href="#facilities-section">Instalaciones</a></li>
+      <li><a href="#about-section">Sobre Nosotros</a></li>
+    </ul>
+  </div>
+
+  <div class="container mt-5" id="login-section">
+    <h2 class="text-center mb-4">Inicio de sesión</h2>
+    <form>
+      <div class="mb-3">
+        <label for="user-type" class="form-label">Tipo de usuario</label>
+        <select class="form-select" id="user-type" required>
+          <option selected disabled value="">Selecciona tu usuario</option>
+          <option value="admin">Empleado</option>
+          <option value="client">Cliente</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 btn-animated"><span>Entrar</span></button>
+    </form>
+    <p class="text-center mt-3">&copy; Derechos reservados</p>
+  </div>
+
+  <div class="container mt-5" id="products-section">
+    <h2 class="text-center mb-4 text-white">Nuestros Productos</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="bugatti.jpg" class="card-img-top" alt="Bugatti">
+          <div class="card-body">
+            <h5 class="card-title">Bugatti Chiron</h5>
+            <a href="#" class="btn btn-success w-100 btn-animated"><span>Comprar</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="audi-r8.jpg" class="card-img-top" alt="Audi R8">
+          <div class="card-body">
+            <h5 class="card-title">Audi R8</h5>
+            <a href="#" class="btn btn-success w-100 btn-animated"><span>Comprar</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="lamborghini.jpg" class="card-img-top" alt="Lamborghini">
+          <div class="card-body">
+            <h5 class="card-title">Lamborghini SVJ Roadster</h5>
+            <a href="#" class="btn btn-success w-100 btn-animated"><span>Comprar</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="mercedes.jpg" class="card-img-top" alt="Mercedes">
+          <div class="card-body">
+            <h5 class="card-title">Mercedes Benz</h5>
+            <a href="#" class="btn btn-success w-100 btn-animated"><span>Comprar</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="porche.jpg" class="card-img-top" alt="Porsche">
+          <div class="card-body">
+            <h5 class="card-title">Porsche</h5>
+            <a href="#" class="btn btn-success w-100 btn-animated"><span>Comprar</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="ferrari.jpg" class="card-img-top" alt="Ferrari">
+          <div class="card-body">
+            <h5 class="card-title">Ferrari</h5>
+            <a href="#" class="btn btn-success w-100 btn-animated"><span>Comprar</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="facilities-section">
+    <h3 class="text-center text-white mb-4">Nuestras Instalaciones</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="almacen.jpeg" class="card-img-top" alt="Almacén de coches 1">
+          <div class="card-body">
+            <p class="card-text text-center">Almacén principal con capacidad para 500 vehículos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Exposicion-Pasion-y-leyenda-Mobility-City-1.jpg" class="card-img-top" alt="Almacén de coches 2">
+          <div class="card-body">
+            <p class="card-text text-center">Zona de exposición de vehículos de lujo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="60940022f20b6476b17ee148-ferrari-magazine-WJ7afoIIqF.avif" class="card-img-top" alt="Almacén de coches 3">
+          <div class="card-body">
+            <p class="card-text text-center">Área de mantenimiento y preparación de vehículos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="about-section">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-white">Sobre Nosotros</h3>
+        <p class="text-white">
+          Somos una empresa dedicada a ofrecer los mejores vehículos de lujo del mercado. Nuestro compromiso es brindar una experiencia única a nuestros clientes, con atención personalizada y productos de la más alta calidad.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-white">Tarjetas de Contacto</h3>
+        <ul class="list-unstyled text-white">
+          <li><strong>Email:</strong> contacto@luxurycars.com</li>
+          <li><strong>Teléfono:</strong> +34 123 456 789</li>
+          <li><strong>Dirección:</strong> Calle de la Estrella, 123, Madrid, España</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="text-white">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="text-white">Acuerdos Legales</h4>
+        <p class="text-white">
+          Al utilizar este sitio web, aceptas nuestros términos y condiciones. Todos los derechos reservados.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h4 class="text-white">Condiciones de Uso</h4>
+        <p class="text-white">
+          Este sitio está diseñado para proporcionar información y servicios relacionados con vehículos de lujo. Por favor, utiliza este sitio de manera responsable.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
