@@ -1,0 +1,11 @@
+<!ELEMENT Coches (Coche*)>
+<!ELEMENT Coche (ID_coche, marca, modelo, matricula, kilometraje, ano_fabricacion, precio, cv, color)>
+<!ELEMENT ID_coche (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT kilometraje (#PCDATA)>
+<!ELEMENT ano_fabricacion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT cv (#PCDATA)>
+<!ELEMENT color (#PCDATA)>

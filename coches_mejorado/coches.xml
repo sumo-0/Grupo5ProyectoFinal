@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Coches SYSTEM "coches.dtd">
+<Coches>
+  <Coche>
+    <ID_coche>1</ID_coche>
+    <marca>Bugatti</marca>
+    <modelo>Chiron</modelo>
+    <matricula>1234ABC</matricula>
+    <kilometraje>1200.0</kilometraje>
+    <ano_fabricacion>2023</ano_fabricacion>
+    <precio>3000000.00</precio>
+    <cv>1500</cv>
+    <color>Azul</color>
+  </Coche>
+  <Coche>
+    <ID_coche>2</ID_coche>
+    <marca>Audi</marca>
+    <modelo>R8</modelo>
+    <matricula>5678DEF</matricula>
+    <kilometraje>8500.0</kilometraje>
+    <ano_fabricacion>2022</ano_fabricacion>
+    <precio>170000.00</precio>
+    <cv>620</cv>
+    <color>Rojo</color>
+  </Coche>
+  <Coche>
+    <ID_coche>3</ID_coche>
+    <marca>Lamborghini</marca>
+    <modelo>SVJ Rds</modelo>
+    <matricula>9012GHI</matricula>
+    <kilometraje>3000.0</kilometraje>
+    <ano_fabricacion>2021</ano_fabricacion>
+    <precio>550000.00</precio>
+    <cv>770</cv>
+    <color>Amarillo</color>
+  </Coche>
+  <Coche>
+    <ID_coche>4</ID_coche>
+    <marca>Mercedes-Benz</marca>
+    <modelo>AMG VGT</modelo>
+    <matricula>3456JKL</matricula>
+    <kilometraje>150.0</kilometraje>
+    <ano_fabricacion>2020</ano_fabricacion>
+    <precio>1200000.00</precio>
+    <cv>577</cv>
+    <color>Plateado</color>
+  </Coche>
+  <Coche>
+    <ID_coche>5</ID_coche>
+    <marca>Porsche</marca>
+    <modelo>911 Turbo S</modelo>
+    <matricula>7890MNO</matricula>
+    <kilometraje>6700.0</kilometraje>
+    <ano_fabricacion>2023</ano_fabricacion>
+    <precio>230000.00</precio>
+    <cv>650</cv>
+    <color>Negro</color>
+  </Coche>
+  <Coche>
+    <ID_coche>6</ID_coche>
+    <marca>Ferrari</marca>
+    <modelo>296 GTS</modelo>
+    <matricula>2345PQR</matricula>
+    <kilometraje>2200.0</kilometraje>
+    <ano_fabricacion>2023</ano_fabricacion>
+    <precio>350000.00</precio>
+    <cv>830</cv>
+    <color>Rojo</color>
+  </Coche>
+</Coches>
